@@ -82,11 +82,7 @@ add_action('pre_get_posts', function ($query) {
 
 add_filter('show_admin_bar', function ($show) {
 
-  if (!current_user_can('administrator')) {
-    return false;
-  }
-
-  return $show;
+  return false;
 });
 
 add_action('admin_init', function () {

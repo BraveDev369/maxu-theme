@@ -55,3 +55,18 @@
 .text-red {
   color: red;
 }
+
+@media (max-width: 991px) {
+  .header-user-dropdown {
+    z-index: 12346979;
+    left: -200px;
+  }
+
+  .mobile_logo_area .col-sm-4 {
+    padding: 20px 0;
+  }
+
+  .mobile_menu_logo {
+    text-align: left;
+  }
+}

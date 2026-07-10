@@ -96,9 +96,12 @@
    <div class="mobile_logo_area hidden-md hidden-lg">
      <div class="container">
        <div class="row">
-         <div class="col-sm-12">
-           <div class="mobile_menu_logo text-center">
-             <a href="index.html" title="maxu">
+         <div class="col-xs-4 col-sm-4">
+           <?php get_template_part('templates/user-top-header') ?>
+         </div>
+         <div class="col-xs-8 col-sm-8">
+           <div class="mobile_menu_logo">
+             <a href="<?= esc_url(home_url('/')); ?>" title="maxu">
                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo/logo.png" alt="maxu">
              </a>
            </div>

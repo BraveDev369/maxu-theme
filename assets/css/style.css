@@ -2325,3 +2325,9 @@ END maxu PAGINATION AREA CSS
 	padding: 3px;
 	border-bottom: 1px solid #ddd;
 }
+
+@media (max-width: 1023px) and (min-width:426px) {
+	#scrollUp {
+		bottom: 60px;
+	}
+}

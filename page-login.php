@@ -22,7 +22,7 @@ if (isset($_GET['login']) && $_GET['login'] !== 'success') {
 }
 ?>
 
-<div class="container">
+<div class="container" style="margin-top: 50px; margin-bottom:50px">
 
   <div class="row">
 
@@ -105,7 +105,7 @@ if (isset($_GET['login']) && $_GET['login'] !== 'success') {
 
               <span>حساب کاربری ندارید؟ </span>
 
-              <a href="<?= esc_url($sign_up_url['url'] ?? '#') ?>">
+              <a class="primary-color" href="<?= esc_url($sign_up_url['url'] ?? '#') ?>">
                 ثبت نام کنید
               </a>
 
