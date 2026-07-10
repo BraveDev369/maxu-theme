@@ -1,0 +1,57 @@
+.header-user {
+  position: relative;
+  display: inline-block;
+}
+
+.header-user-toggle {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.header-user-dropdown {
+  display: none;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  width: 240px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .15);
+  z-index: 999;
+}
+
+.header-user-info {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.header-user-info strong {
+  display: block;
+}
+
+.header-user-info small {
+  color: #999;
+}
+
+.header-user-dropdown ul {
+  list-style: none;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+}
+
+.header-user-dropdown li a {
+  display: block;
+  padding: 12px 15px;
+}
+
+.header-user-dropdown li a:hover {
+  background: #f5f5f5;
+}
+
+.text-red {
+  color: red;
+}

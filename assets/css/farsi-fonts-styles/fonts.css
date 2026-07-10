@@ -1,0 +1,726 @@
+/* Auto Generated - Do Not Edit */
+
+/* ======================================
+ * aviny
+ * ====================================== */
+
+@font-face {
+	font-family: "aviny";
+	src: url("../../fonts/fonts-files/aviny-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/aviny-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * azarmehr-cd
+ * ====================================== */
+
+@font-face {
+	font-family: "azarmehr-cd";
+	src: url("../../fonts/fonts-files/azarmehr-cd-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/azarmehr-cd-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "azarmehr-cd";
+	src: url("../../fonts/fonts-files/azarmehr-cd-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/azarmehr-cd-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "azarmehr-cd";
+	src: url("../../fonts/fonts-files/azarmehr-cd-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/azarmehr-cd-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "azarmehr-cd";
+	src: url("../../fonts/fonts-files/azarmehr-cd-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/azarmehr-cd-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * azarmehr
+ * ====================================== */
+
+@font-face {
+	font-family: "azarmehr";
+	src: url("../../fonts/fonts-files/azarmehr-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/azarmehr-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "azarmehr";
+	src: url("../../fonts/fonts-files/azarmehr-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/azarmehr-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "azarmehr";
+	src: url("../../fonts/fonts-files/azarmehr-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/azarmehr-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "azarmehr";
+	src: url("../../fonts/fonts-files/azarmehr-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/azarmehr-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * damavand
+ * ====================================== */
+
+@font-face {
+	font-family: "damavand";
+	src: url("../../fonts/fonts-files/damavand-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/damavand-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * dana
+ * ====================================== */
+
+@font-face {
+	font-family: "dana";
+	src: url("../../fonts/fonts-files/dana-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/dana-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "dana";
+	src: url("../../fonts/fonts-files/dana-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/dana-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * dastnevis
+ * ====================================== */
+
+@font-face {
+	font-family: "dastnevis";
+	src: url("../../fonts/fonts-files/dastnevis-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/dastnevis-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+/* ======================================
+ * dubai
+ * ====================================== */
+
+@font-face {
+	font-family: "dubai";
+	src: url("../../fonts/fonts-files/dubai-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/dubai-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "dubai";
+	src: url("../../fonts/fonts-files/dubai-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/dubai-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "dubai";
+	src: url("../../fonts/fonts-files/dubai-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/dubai-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "dubai";
+	src: url("../../fonts/fonts-files/dubai-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/dubai-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * estedad
+ * ====================================== */
+
+@font-face {
+	font-family: "estedad";
+	src: url("../../fonts/fonts-files/estedad-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/estedad-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "estedad";
+	src: url("../../fonts/fonts-files/estedad-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/estedad-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "estedad";
+	src: url("../../fonts/fonts-files/estedad-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/estedad-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "estedad";
+	src: url("../../fonts/fonts-files/estedad-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/estedad-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * helvetica-neue
+ * ====================================== */
+
+@font-face {
+	font-family: "helvetica-neue";
+	src: url("../../fonts/fonts-files/helvetica-neue-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/helvetica-neue-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "helvetica-neue";
+	src: url("../../fonts/fonts-files/helvetica-neue-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/helvetica-neue-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "helvetica-neue";
+	src: url("../../fonts/fonts-files/helvetica-neue-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/helvetica-neue-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * iran-sans-cd
+ * ====================================== */
+
+@font-face {
+	font-family: "iran-sans-cd";
+	src: url("../../fonts/fonts-files/iran-sans-cd-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-sans-cd-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "iran-sans-cd";
+	src: url("../../fonts/fonts-files/iran-sans-cd-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-sans-cd-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "iran-sans-cd";
+	src: url("../../fonts/fonts-files/iran-sans-cd-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-sans-cd-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "iran-sans-cd";
+	src: url("../../fonts/fonts-files/iran-sans-cd-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-sans-cd-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * iran-sans
+ * ====================================== */
+
+@font-face {
+	font-family: "iran-sans";
+	src: url("../../fonts/fonts-files/iran-sans-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-sans-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "iran-sans";
+	src: url("../../fonts/fonts-files/iran-sans-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-sans-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "iran-sans";
+	src: url("../../fonts/fonts-files/iran-sans-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-sans-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "iran-sans";
+	src: url("../../fonts/fonts-files/iran-sans-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-sans-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * iran-yekan-cd
+ * ====================================== */
+
+@font-face {
+	font-family: "iran-yekan-cd";
+	src: url("../../fonts/fonts-files/iran-yekan-cd-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-yekan-cd-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "iran-yekan-cd";
+	src: url("../../fonts/fonts-files/iran-yekan-cd-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-yekan-cd-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "iran-yekan-cd";
+	src: url("../../fonts/fonts-files/iran-yekan-cd-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-yekan-cd-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "iran-yekan-cd";
+	src: url("../../fonts/fonts-files/iran-yekan-cd-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-yekan-cd-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * iran-yekan
+ * ====================================== */
+
+@font-face {
+	font-family: "iran-yekan";
+	src: url("../../fonts/fonts-files/iran-yekan-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-yekan-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "iran-yekan";
+	src: url("../../fonts/fonts-files/iran-yekan-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-yekan-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "iran-yekan";
+	src: url("../../fonts/fonts-files/iran-yekan-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-yekan-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "iran-yekan";
+	src: url("../../fonts/fonts-files/iran-yekan-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/iran-yekan-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * lalezar
+ * ====================================== */
+
+@font-face {
+	font-family: "lalezar";
+	src: url("../../fonts/fonts-files/lalezar-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/lalezar-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * mikhak-sd
+ * ====================================== */
+
+@font-face {
+	font-family: "mikhak-sd";
+	src: url("../../fonts/fonts-files/mikhak-sd-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/mikhak-sd-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "mikhak-sd";
+	src: url("../../fonts/fonts-files/mikhak-sd-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/mikhak-sd-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "mikhak-sd";
+	src: url("../../fonts/fonts-files/mikhak-sd-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/mikhak-sd-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "mikhak-sd";
+	src: url("../../fonts/fonts-files/mikhak-sd-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/mikhak-sd-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * mikhak
+ * ====================================== */
+
+@font-face {
+	font-family: "mikhak";
+	src: url("../../fonts/fonts-files/mikhak-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/mikhak-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "mikhak";
+	src: url("../../fonts/fonts-files/mikhak-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/mikhak-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "mikhak";
+	src: url("../../fonts/fonts-files/mikhak-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/mikhak-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "mikhak";
+	src: url("../../fonts/fonts-files/mikhak-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/mikhak-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * myriad
+ * ====================================== */
+
+@font-face {
+	font-family: "myriad";
+	src: url("../../fonts/fonts-files/myriad-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/myriad-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "myriad";
+	src: url("../../fonts/fonts-files/myriad-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/myriad-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * noora
+ * ====================================== */
+
+@font-face {
+	font-family: "noora";
+	src: url("../../fonts/fonts-files/noora-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/noora-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "noora";
+	src: url("../../fonts/fonts-files/noora-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/noora-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "noora";
+	src: url("../../fonts/fonts-files/noora-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/noora-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "noora";
+	src: url("../../fonts/fonts-files/noora-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/noora-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * palatino-sans
+ * ====================================== */
+
+@font-face {
+	font-family: "palatino-sans";
+	src: url("../../fonts/fonts-files/palatino-sans-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/palatino-sans-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "palatino-sans";
+	src: url("../../fonts/fonts-files/palatino-sans-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/palatino-sans-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * pinar-sd
+ * ====================================== */
+
+@font-face {
+	font-family: "pinar-sd";
+	src: url("../../fonts/fonts-files/pinar-sd-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/pinar-sd-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "pinar-sd";
+	src: url("../../fonts/fonts-files/pinar-sd-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/pinar-sd-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "pinar-sd";
+	src: url("../../fonts/fonts-files/pinar-sd-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/pinar-sd-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "pinar-sd";
+	src: url("../../fonts/fonts-files/pinar-sd-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/pinar-sd-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * pinar
+ * ====================================== */
+
+@font-face {
+	font-family: "pinar";
+	src: url("../../fonts/fonts-files/pinar-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/pinar-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "pinar";
+	src: url("../../fonts/fonts-files/pinar-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/pinar-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "pinar";
+	src: url("../../fonts/fonts-files/pinar-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/pinar-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "pinar";
+	src: url("../../fonts/fonts-files/pinar-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/pinar-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * pofak
+ * ====================================== */
+
+@font-face {
+	font-family: "pofak";
+	src: url("../../fonts/fonts-files/pofak-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/pofak-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "pofak";
+	src: url("../../fonts/fonts-files/pofak-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/pofak-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * shabnam
+ * ====================================== */
+
+@font-face {
+	font-family: "shabnam";
+	src: url("../../fonts/fonts-files/shabnam-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/shabnam-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "shabnam";
+	src: url("../../fonts/fonts-files/shabnam-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/shabnam-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "shabnam";
+	src: url("../../fonts/fonts-files/shabnam-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/shabnam-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "shabnam";
+	src: url("../../fonts/fonts-files/shabnam-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/shabnam-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * vanda
+ * ====================================== */
+
+@font-face {
+	font-family: "vanda";
+	src: url("../../fonts/fonts-files/vanda-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/vanda-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "vanda";
+	src: url("../../fonts/fonts-files/vanda-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/vanda-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "vanda";
+	src: url("../../fonts/fonts-files/vanda-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/vanda-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+
+/* ======================================
+ * vazir
+ * ====================================== */
+
+@font-face {
+	font-family: "vazir";
+	src: url("../../fonts/fonts-files/vazir-300.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/vazir-300.woff") format("woff");
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "vazir";
+	src: url("../../fonts/fonts-files/vazir-400.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/vazir-400.woff") format("woff");
+	font-weight: 400;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "vazir";
+	src: url("../../fonts/fonts-files/vazir-500.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/vazir-500.woff") format("woff");
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "vazir";
+	src: url("../../fonts/fonts-files/vazir-700.woff2") format("woff2"),
+		 url("../../fonts/fonts-files/vazir-700.woff") format("woff");
+	font-weight: 700;
+	font-display: swap;
+}
+

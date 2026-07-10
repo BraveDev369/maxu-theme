@@ -1,0 +1,49 @@
+.form_field_rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating-stars {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.rating-stars input {
+  display: none;
+}
+
+.rating-stars label {
+  cursor: pointer;
+  color: #ccc;
+  font-size: 22px;
+  transition: .2s;
+}
+
+.rating-stars label:hover,
+.rating-stars label:hover~label {
+  color: var(--primary-color);
+}
+
+.rating-stars input:checked~label {
+  color: var(--primary-color);
+}
+
+.rating-title {
+  display: block;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.3s ease-out 0s;
+  margin-left: 6px;
+}
+
+
+.rating-title:hover {
+  color: var(--primary-color);
+}
+
+.rating-star-show {
+  font-size: 17px !important;
+  margin-left: 2px !important;
+}

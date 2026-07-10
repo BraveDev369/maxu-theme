@@ -1,0 +1,227 @@
+@import url("farsi-fonts-styles/fonts.css");
+
+body {
+	color: #111;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 1.6;
+	font-family: "primary-font", "segoe ui", "tahoma";
+	direction: rtl;
+}
+
+.ltr_text {
+	display: inline-block;
+	direction: ltr;
+}
+
+.primary-font {
+	font-family: "primary-font", "segoe ui", "tahoma" !important;
+}
+
+.secondary-font {
+	font-family: "secondary-font", "primary-font", "segoe ui", "tahoma" !important;
+}
+
+p {
+	font-weight: 400;
+	font-style: normal;
+	color: #1a264c;
+	line-height: 2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #111;
+	font-style: normal;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	line-height: 1.85;
+	font-weight: 700;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+	font-size: 30px;
+}
+
+h1 {
+	font-family: "secondary-font", "primary-font", "segoe ui", "tahoma";
+}
+
+h2 {
+	font-family: "secondary-font", "primary-font", "segoe ui", "tahoma";
+}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+a {
+	-webkit-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	-moz-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+}
+
+a {
+	color: #111;
+}
+
+a:focus,
+.btn:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover {
+	text-decoration: none;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: none;
+}
+
+:focus {
+	outline: none;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+	-webkit-transition: .5s;
+	-o-transition: .5s;
+	-moz-transition: .5s;
+	transition: .5s;
+}
+
+h3 small a {
+	color: #3d59e8;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 22px;
+}
+
+h5 {
+	font-size: 18px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+li {}
+
+input:focus,
+button:focus {
+	border-color: transparent;
+	outline-color: transparent;
+}
+
+textarea:focus {
+	border-color: transparent;
+	outline-color: transparent;
+}
+
+hr {
+	margin: 60px 0;
+	padding: 0px;
+	border-bottom: 1px solid #eceff8;
+	border-top: 0px;
+}
+
+hr.style-2 {
+	border-bottom: 1px dashed #f10;
+}
+
+hr.mp-0 {
+	margin: 0;
+	border-bottom: 1px solid #eceff8;
+}
+
+hr.mtb-40 {
+	margin: 40px 0;
+	border-bottom: 1px solid #eceff8;
+	border-top: 0px;
+}
+
+label {
+	color: #f00;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+a,
+i,
+cite,
+em,
+var,
+address,
+dfn,
+ol,
+li,
+ul {
+	font-style: normal;
+}
+
+.single-blog-content span,
+.single-blog-content em {
+	font-weight: 400;
+}
+
+.top-form-control::-webkit-input-placeholder {
+	/* Chrome/Opera/Safari */
+	color: #fff !important;
+}
+
+.top-form-control::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #fff !important;
+}
+
+.mc4wp-form-fields input::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #333 !important;
+}
