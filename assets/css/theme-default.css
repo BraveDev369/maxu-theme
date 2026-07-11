@@ -6,7 +6,7 @@ body {
 	font-style: normal;
 	font-size: 16px;
 	line-height: 1.6;
-	font-family: "primary-font", "segoe ui", "tahoma";
+	font-family: var(--primary-font), "segoe ui", "tahoma";
 	direction: rtl;
 }
 
@@ -58,11 +58,11 @@ a:hover {
 }
 
 .primary-font {
-	font-family: "primary-font", "segoe ui", "tahoma" !important;
+	font-family: var(--primary-font), "segoe ui", "tahoma" !important;
 }
 
 .secondary-font {
-	font-family: "secondary-font", "primary-font", "segoe ui", "tahoma" !important;
+	font-family: var(--secondary-font), var(--primary-font), "segoe ui", "tahoma" !important;
 }
 
 p {
@@ -93,11 +93,11 @@ h6 {
 }
 
 h1 {
-	font-family: "secondary-font", "primary-font", "segoe ui", "tahoma";
+	font-family: var(--secondary-font), var(--primary-font), "segoe ui", "tahoma";
 }
 
 h2 {
-	font-family: "secondary-font", "primary-font", "segoe ui", "tahoma";
+	font-family: var(--secondary-font), var(--primary-font), "segoe ui", "tahoma";
 }
 
 h3 {}

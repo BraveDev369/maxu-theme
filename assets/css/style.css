@@ -1029,7 +1029,7 @@ portfolio area css
 	-o-transition: .5s;
 	-moz-transition: .5s;
 	transition: .5s;
-	font-family: "secondary-font", "primary-font", "segoe ui", "tahoma";
+	font-family: var(--secondary-font), var(--primary-font), "segoe ui", "tahoma";
 }
 
 .single_pricing:hover .single_pricing_title_inner h3 {

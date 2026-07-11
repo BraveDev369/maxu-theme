@@ -91,24 +91,9 @@ add_action('wp_head', function () {
 
 ?>
   <style>
-    body {
-      font-family: "<?php echo esc_html($font); ?>", sans-serif;
-    }
-
-    .primary-font {
-      font-family: "<?php echo esc_html($font); ?>", "segoe ui", "tahoma" !important;
-    }
-
-    .secondary-font {
-      font-family: "<?php echo esc_html($h1_h2_font); ?>", "<?php echo esc_html($font); ?>", "segoe ui", "tahoma" !important;
-    }
-
-    h1 {
-      font-family: "<?php echo esc_html($h1_h2_font); ?>", "<?php echo esc_html($font); ?>", "segoe ui", "tahoma";
-    }
-
-    h2 {
-      font-family: "<?php echo esc_html($h1_h2_font); ?>", "<?php echo esc_html($font); ?>", "segoe ui", "tahoma";
+    :root {
+      --primary-font: <?= esc_html($font); ?>;
+      --secondary-font: <?= esc_html($h1_h2_font); ?>;
     }
   </style>
 <?php
