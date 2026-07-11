@@ -56,35 +56,34 @@ if (isset($_GET['login']) && $_GET['login'] !== 'success') {
               name="action"
               value="maxu_login">
 
-            <div class="form-group">
-
-              <label>نام کاربری یا ایمیل</label>
+            <div class="form_field_inner">
 
               <input
                 type="text"
                 name="username"
                 class="form-control js-login-username"
+                placeholder="نام کاربری یا ایمیل"
                 value="<?= esc_attr($old['username'] ?? '') ?>">
 
               <?php if (!empty($errors['username'])) : ?>
-                <small class="text-danger">
+                <small class="text-red">
                   <?= esc_html($errors['username']) ?>
                 </small>
               <?php endif; ?>
 
             </div>
 
-            <div class="form-group">
+            <div class="form_field_inner">
 
-              <label>رمز عبور</label>
 
               <input
                 type="password"
                 name="password"
+                placeholder="رمز ورود"
                 class="form-control js-login-password">
 
               <?php if (!empty($errors['password'])) : ?>
-                <small class="text-danger">
+                <small class="text-red">
                   <?= esc_html($errors['password']) ?>
                 </small>
               <?php endif; ?>

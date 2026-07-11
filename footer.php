@@ -140,7 +140,7 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
             </div>
             <div class="widget widget_mc4wp_form_widget">
               <form
-
+                class="footer-newsletter-form"
                 action="<?= esc_url(admin_url('admin-post.php')); ?>"
                 method="post">
 
@@ -160,13 +160,13 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
                   <p>
 
                     <input
-                      type="email"
+                      type="text"
                       name="email"
+                      class="js-newsletter-email"
                       value="<?= esc_attr($old['email'] ?? '') ?>"
                       placeholder="آدرس ایمیل شما"
-                      required
                       dir="ltr">
-
+                    <smal class="text red fnl-error-message"></smal>
                   </p>
 
                   <?php if (!empty($errors['email'])) : ?>

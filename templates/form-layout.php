@@ -34,7 +34,7 @@ if (isset($_GET['contact'])) {
 <div class="contact_about_us">
   <h2 class="contact-title">دیدگاه خود را بیان کنید</h2>
 
-  <form action="<?= esc_url(admin_url('admin-post.php')); ?>" method="post">
+  <form class="contact-form" action="<?= esc_url(admin_url('admin-post.php')); ?>" method="post">
     <input type="hidden" name="action" value="contact_form">
 
     <?php wp_nonce_field('contact_form_action', 'contact_nonce'); ?>
@@ -44,61 +44,56 @@ if (isset($_GET['contact'])) {
 
         <div class="form_field_inner">
           <input
+            class="js-name"
             type="text"
             name="name"
             value="<?= esc_attr($old['name'] ?? '') ?>"
             placeholder="نام شما">
-          <?php if (!empty($errors['name'])) : ?>
-            <small class="text-danger">
-              <?= esc_html($errors['name']) ?>
-            </small>
-          <?php endif; ?>
+          <small class="error-message text-red"><?= esc_html($errors['name'] ?? '') ?></small>
         </div>
         <div class="form_field_inner">
           <input
-            type="email"
+            class="js-email"
+
+            type="text"
             name="email"
             value="<?= esc_attr($old['email'] ?? '') ?>"
             placeholder="ایمیل">
-          <?php if (!empty($errors['email'])) : ?>
-            <small class="text-danger">
-              <?= esc_html($errors['email']) ?>
-            </small>
-          <?php endif; ?>
+          <small class="error-message text-red"><?= esc_html($errors['email'] ?? '') ?></small>
         </div>
 
         <div class="form_field_inner">
           <input
+            class="js-phone"
             type="text"
             name="phone"
             placeholder="شماره تماس"
             value="<?= esc_attr($old['phone'] ?? '') ?>">
+          <small class="error-message text-red"><?= esc_html($errors['phone'] ?? '') ?></small>
         </div>
 
 
 
         <div class="form_field_inner">
           <input
+            class="js-website"
             type="text"
             name="website"
             placeholder="آدرس وبسایت"
             value="<?= esc_attr($old['website'] ?? '') ?>">
+          <small class="error-message text-red"><?= esc_html($errors['website'] ?? '') ?></small>
         </div>
 
 
 
         <div class="form_field_comment">
           <textarea
+            class="js-message"
             name="message"
             placeholder="پیام خود را بنویسید ..."
             cols="30"
-            rows="10"
-            required><?= esc_textarea($old['message'] ?? '') ?></textarea>
-          <?php if (!empty($errors['message'])) : ?>
-            <small class="text-danger">
-              <?= esc_html($errors['message']) ?>
-            </small>
-          <?php endif; ?>
+            rows="10"><?= esc_textarea($old['message'] ?? '') ?></textarea>
+          <small class="error-message text-red"><?= esc_html($errors['message'] ?? '') ?></small>
         </div>
 
       </div>

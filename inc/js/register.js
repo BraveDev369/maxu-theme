@@ -13,7 +13,7 @@ jQuery(function ($) {
 
     function showError($input, message) {
       $input.after(
-        '<small class="text-danger register-error">' + message + "</small>",
+        '<small class="text-red register-error">' + message + "</small>",
       );
 
       hasError = true;

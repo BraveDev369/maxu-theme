@@ -55,70 +55,64 @@ if (isset($_GET['register']) && $_GET['register'] !== 'success') {
               name="action"
               value="maxu_register">
 
-            <div class="form-group">
-
-              <label>نام کاربری</label>
-
+            <div class="form_field_inner">
               <input
                 type="text"
                 name="username"
+                placeholder="نام کاربری"
                 class="form-control js-register-username"
                 value="<?= esc_attr($old['username'] ?? ''); ?>">
 
               <?php if (!empty($errors['username'])) : ?>
-                <small class="text-danger">
+                <small class="text-red">
                   <?= esc_html($errors['username']); ?>
                 </small>
               <?php endif; ?>
 
             </div>
 
-            <div class="form-group">
-
-              <label>ایمیل</label>
+            <div class="form_field_inner">
 
               <input
                 type="email"
                 name="email"
+                placeholder="ایمیل"
                 class="form-control js-register-email"
                 value="<?= esc_attr($old['email'] ?? ''); ?>">
 
               <?php if (!empty($errors['email'])) : ?>
-                <small class="text-danger">
+                <small class="text-red">
                   <?= esc_html($errors['email']); ?>
                 </small>
               <?php endif; ?>
 
             </div>
 
-            <div class="form-group">
-
-              <label>رمز عبور</label>
-
+            <div class="form_field_inner">
               <input
                 type="password"
                 name="password"
+                placeholder="رمز عبور"
                 class="form-control js-register-password">
 
               <?php if (!empty($errors['password'])) : ?>
-                <small class="text-danger">
+                <small class="text-red">
                   <?= esc_html($errors['password']); ?>
                 </small>
               <?php endif; ?>
 
             </div>
 
-            <div class="form-group">
-
-              <label>تکرار رمز عبور</label>
+            <div class="form_field_inner">
 
               <input
                 type="password"
                 name="confirm_password"
+                placeholder="تکرار رمز عبور"
                 class="form-control js-register-confirm-password">
 
               <?php if (!empty($errors['confirm_password'])) : ?>
-                <small class="text-danger">
+                <small class="text-red">
                   <?= esc_html($errors['confirm_password']); ?>
                 </small>
               <?php endif; ?>

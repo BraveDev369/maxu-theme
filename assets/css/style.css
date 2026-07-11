@@ -271,7 +271,7 @@ slider area css
 .section_title h2 {
 	font-size: 37px;
 	font-weight: 600;
-	color: var(--primary-darker);
+	color: #1a264c;
 	margin-bottom: 5px;
 }
 
@@ -284,10 +284,11 @@ h2.maxb {
 }
 
 .section_title p {
+	text-align: center;
 	margin: auto;
 	font-size: 16px;
 	font-weight: 400;
-	color: var(--primary-darker);
+	color: #1a264c;
 	width: 59%;
 }
 
@@ -1087,7 +1088,7 @@ portfolio area css
 }
 
 .pricing_text ul li a:hover {
-	color: #9db5ff;
+	color: var(--primary-darker);
 }
 
 /* pricing_botton */
@@ -1573,6 +1574,7 @@ h2.footer_title:before {
 }
 
 .footer-sociala-info p {
+	text-align: right;
 	margin-bottom: 22px;
 	font-size: 14px;
 	color: #fff;
@@ -1596,6 +1598,7 @@ h2.footer_title:before {
 }
 
 .mc4wp-form-fields p {
+	text-align: right;
 	font-size: 14px;
 	margin-bottom: 28px;
 	color: #fff;

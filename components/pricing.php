@@ -47,14 +47,14 @@ $plans               = get_field('plans');
 
                 <div class="single_pricing_thumb">
 
-                  <img src="<?php echo get_template_directory_uri(); ?>/assets/images/prining/p-bg1.png" alt="">
+                  <img src="<?= get_template_directory_uri(); ?>/assets/images/prining/p-bg1.png" alt="">
 
                 </div>
 
                 <div class="single_pricing_item">
 
                   <span class="tk">
-                    <?= esc_html($plan['price']); ?>
+                    <?= esc_html(number_format($plan['price'], 0, '.', '٬')); ?>
                   </span>
 
                   <span>

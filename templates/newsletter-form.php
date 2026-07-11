@@ -33,7 +33,7 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
 
 
 
-          <form action="<?= esc_url(admin_url('admin-post.php')); ?>" method="post">
+          <form class="newsletter-form" action="<?= esc_url(admin_url('admin-post.php')); ?>" method="post">
 
             <?php wp_nonce_field('maxu_newsletter', 'maxu_newsletter_nonce'); ?>
 
@@ -43,11 +43,13 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
               value="maxu_newsletter">
 
             <input
-              type="email"
+              class="js-newsletter-email"
+              type="text"
               name="email"
               value="<?= esc_attr($old['email'] ?? '') ?>"
               placeholder="ایمیل خود را وارد کنید"
               title="عضویت در خبرنامه">
+
 
             <button type="submit" class="icons">
               <i class="fa fa-paper-plane"></i>
@@ -58,9 +60,10 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
 
         </div>
 
+        <smal id="nl-error-message" class="text-red"></smal>
         <?php if (!empty($errors['email'])) : ?>
 
-          <small class="text-danger">
+          <small class="nl-error-message text-red">
             <?= esc_html($errors['email']) ?>
           </small>
 

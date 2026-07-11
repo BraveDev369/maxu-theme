@@ -52,14 +52,22 @@ $services = new WP_Query([
 
                   <h2><?php the_title(); ?></h2>
 
-                  <p><?php the_excerpt(); ?></p>
+                  <?php
+                  $excerpt = get_the_excerpt();
+
+                  if (mb_strlen($excerpt) > 100) {
+                    $excerpt = mb_substr($excerpt, 0, 100) . '...';
+                  }
+                  ?>
+
+                  <p><?= esc_html($excerpt); ?></p>
 
                 </div>
 
                 <div class="service_btn">
 
                   <a href="<?php the_permalink(); ?>">
-                    مشاهده جزئیات
+                    مشاهده بیشتر
                   </a>
 
                 </div>

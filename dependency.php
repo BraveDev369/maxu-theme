@@ -203,3 +203,27 @@ add_action('wp_enqueue_scripts', function () {
     true
   );
 });
+
+
+add_action('wp_enqueue_scripts', function () {
+
+  wp_enqueue_script(
+    'maxu-form-layout',
+    get_template_directory_uri() . '/inc/js/form-layout.js',
+    ['jquery'],
+    filemtime(get_template_directory() . '/inc/js/form-layout.js'),
+    true
+  );
+});
+
+
+add_action('wp_enqueue_scripts', function () {
+
+  wp_enqueue_script(
+    'maxu-newsletter',
+    get_template_directory_uri() . '/inc/js/newsletter.js',
+    ['jquery'],
+    filemtime(get_template_directory() . '/inc/js/newsletter.js'),
+    true
+  );
+});

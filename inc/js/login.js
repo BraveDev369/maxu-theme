@@ -11,7 +11,7 @@ jQuery(function ($) {
 
     function showError($input, message) {
       $input.after(
-        '<small class="text-danger login-error">' + message + "</small>",
+        '<small class="text-red login-error">' + message + "</small>",
       );
 
       hasError = true;
