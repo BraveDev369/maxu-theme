@@ -1341,6 +1341,7 @@ h2.contact-title {
 }
 
 .single_blog_title {
+	max-height: 160px;
 	text-align: center;
 	padding: 65px 20px 0px;
 }
@@ -1358,7 +1359,7 @@ h2.contact-title {
 
 .single_blog_content p {
 	font-size: 16px;
-	color: var(--primary-darker);
+	color: black;
 	margin-bottom: 20px;
 }
 

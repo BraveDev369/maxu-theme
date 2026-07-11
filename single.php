@@ -34,8 +34,14 @@ get_template_part('components/page-title');
               </div>
               <!-- content -->
               <div class="single_blog_content">
+                <h2><?= get_the_excerpt(); ?></h2>
                 <p style="text-align: justify;">
-                  <?php echo get_the_excerpt(); ?>
+
+                  <?php
+                  if (get_the_content()) {
+                    echo get_the_content();
+                  }
+                  ?>
                 </p>
               </div>
             </div>

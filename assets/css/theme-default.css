@@ -66,6 +66,7 @@ a:hover {
 }
 
 p {
+	text-align: justify;
 	font-weight: 400;
 	font-style: normal;
 	color: #1a264c;
