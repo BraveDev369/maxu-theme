@@ -16,6 +16,7 @@
  </head>
 
  <body>
+   <div id="scroll-progress"></div>
    <?php
     $hide_pages = get_field('hide_top_header', 'option');
 

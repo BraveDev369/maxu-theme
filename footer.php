@@ -230,8 +230,8 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
     </div>
   </div>
   <!-- END FOOTER BOTTOM AREA  -->
-  <?php wp_footer(); ?>
 </footer>
+<?php wp_footer(); ?>
 </body>
 
 </html>

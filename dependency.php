@@ -164,34 +164,10 @@ function maxu_enqueue_assets()
 add_action('wp_enqueue_scripts', 'maxu_enqueue_assets');
 
 
-add_action('wp_enqueue_scripts', function () {
-
-  if (is_page('register')) {
-
-    wp_enqueue_script(
-      'maxu-register',
-      get_template_directory_uri() . '/inc/js/register.js',
-      ['jquery'],
-      filemtime(get_template_directory() . '/inc/js/register.js'),
-      true
-    );
-  }
-});
 
 
-add_action('wp_enqueue_scripts', function () {
 
-  if (is_page('login')) {
 
-    wp_enqueue_script(
-      'maxu-login',
-      get_template_directory_uri() . '/inc/js/login.js',
-      ['jquery'],
-      filemtime(get_template_directory() . '/inc/js/login.js'),
-      true
-    );
-  }
-});
 
 add_action('wp_enqueue_scripts', function () {
 
@@ -226,4 +202,46 @@ add_action('wp_enqueue_scripts', function () {
     filemtime(get_template_directory() . '/inc/js/newsletter.js'),
     true
   );
+});
+
+
+add_action('wp_enqueue_scripts', function () {
+
+  wp_enqueue_script(
+    'maxu-scroll-bar',
+    get_template_directory_uri() . '/inc/js/scroll-bar.js',
+    ['jquery'],
+    filemtime(get_template_directory() . '/inc/js/scroll-bar.js'),
+    true
+  );
+});
+
+
+add_action('wp_enqueue_scripts', function () {
+
+  if (is_page('register')) {
+
+    wp_enqueue_script(
+      'maxu-register',
+      get_template_directory_uri() . '/inc/js/register.js',
+      ['jquery'],
+      filemtime(get_template_directory() . '/inc/js/register.js'),
+      true
+    );
+  }
+});
+
+
+add_action('wp_enqueue_scripts', function () {
+
+  if (is_page('login')) {
+
+    wp_enqueue_script(
+      'maxu-login',
+      get_template_directory_uri() . '/inc/js/login.js',
+      ['jquery'],
+      filemtime(get_template_directory() . '/inc/js/login.js'),
+      true
+    );
+  }
 });

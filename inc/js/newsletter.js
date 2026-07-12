@@ -1,4 +1,3 @@
-console.log("newsletter");
 jQuery(function ($) {
   const $form = $(".newsletter-form");
 
@@ -29,7 +28,6 @@ jQuery(function ($) {
   });
 });
 
-console.log("newsletter");
 jQuery(function ($) {
   const $form = $(".footer-newsletter-form");
 
