@@ -150,5 +150,21 @@ if (isset($_GET['register']) && $_GET['register'] !== 'success') {
   </div>
 
 </div>
-
+<?php if (isset($_GET['register']) && $_GET['register'] === 'success') : ?>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        icon: 'success',
+        title: 'ثبت‌نام با موفقیت انجام شد',
+        text: 'حساب کاربری شما با موفقیت ایجاد شد.',
+        timer: 1800,
+        timerProgressBar: true,
+        showConfirmButton: false,
+        willClose: () => {
+          window.location.href = "<?= esc_url(home_url('/')); ?>";
+        }
+      });
+    });
+  </script>
+<?php endif; ?>
 <?php get_footer(); ?>

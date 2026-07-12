@@ -92,7 +92,11 @@ class LoginHandler
     wp_set_current_user($user->ID);
     wp_set_auth_cookie($user->ID, true);
 
-    wp_safe_redirect(home_url());
+    wp_safe_redirect(add_query_arg(
+      'login',
+      'success',
+      home_url('/login/')
+    ));
 
     exit;
   }

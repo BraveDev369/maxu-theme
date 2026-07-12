@@ -39,7 +39,7 @@ get_template_part('components/page-title');
 
                   <?php
                   if (get_the_content()) {
-                    echo esc_html(get_the_content());
+                    echo get_the_content();
                   }
                   ?>
                 </p>

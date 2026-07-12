@@ -121,5 +121,21 @@ if (isset($_GET['login']) && $_GET['login'] !== 'success') {
   </div>
 
 </div>
-
+<?php if (isset($_GET['login']) && $_GET['login'] === 'success') : ?>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      Swal.fire({
+        icon: 'success',
+        title: 'ورود با موفقیت انجام شد',
+        text: 'خوش آمدید!',
+        timer: 1800,
+        timerProgressBar: true,
+        showConfirmButton: false,
+        willClose: () => {
+          window.location.href = "<?= esc_url(home_url('/')); ?>";
+        }
+      });
+    });
+  </script>
+<?php endif; ?>
 <?php get_footer(); ?>

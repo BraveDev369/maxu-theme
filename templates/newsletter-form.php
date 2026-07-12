@@ -61,20 +61,6 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
         </div>
 
         <smal id="nl-error-message" class="text-red"></smal>
-        <?php if (!empty($errors['email'])) : ?>
-
-          <small class="nl-error-message text-red">
-            <?= esc_html($errors['email']) ?>
-          </small>
-
-        <?php endif; ?>
-        <?php if (isset($_GET['newsletter']) && $_GET['newsletter'] === 'success') : ?>
-
-          <smal class="text-success">
-            با موفقیت عضو خبرنامه شدید.
-          </smal>
-
-        <?php endif; ?>
       </div>
 
     </div>

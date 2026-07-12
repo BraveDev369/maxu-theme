@@ -1,32 +1,19 @@
 <?php
+if (! defined("ABSPATH")) exit;
 
 $errors = [];
 $old = [];
 
 if (isset($_GET['contact'])) {
+  $data = json_decode(
+    base64_decode(
+      urldecode($_GET['contact'])
+    ),
+    true
+  );
 
-  if ($_GET['contact'] === 'success') {
-
-    echo '<div class="alert alert-success">
-                پیام شما با موفقیت ثبت شد.
-              </div>';
-  } elseif ($_GET['contact'] === 'db_error') {
-
-    echo '<div class="alert alert-danger">
-                خطایی هنگام ذخیره اطلاعات رخ داد.
-              </div>';
-  } else {
-
-    $data = json_decode(
-      base64_decode(
-        urldecode($_GET['contact'])
-      ),
-      true
-    );
-
-    $errors = $data['errors'] ?? [];
-    $old    = $data['old'] ?? [];
-  }
+  $errors = $data['errors'] ?? [];
+  $old    = $data['old'] ?? [];
 }
 ?>
 
@@ -112,3 +99,23 @@ if (isset($_GET['contact'])) {
 
 
 </div>
+
+<?php if (isset($_GET['contact'])) : ?>
+
+  <?php if ($_GET['contact'] === 'success') : ?>
+
+    <div class="toast-notification toast-success js-toast">
+      <button type="button" class="toast-close">&times;</button>
+      <span class="toast-text">پیام شما با موفقیت ثبت شد.</span>
+    </div>
+
+  <?php elseif ($_GET['contact'] === 'db_error') : ?>
+
+    <div class="toast-notification toast-error js-toast">
+      <button type="button" class="toast-close">&times;</button>
+      <span class="toast-text">خطایی هنگام ذخیره اطلاعات رخ داد.</span>
+    </div>
+
+  <?php endif; ?>
+
+<?php endif; ?>

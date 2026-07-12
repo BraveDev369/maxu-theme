@@ -173,23 +173,6 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
                       dir="ltr">
                     <smal class="text red fnl-error-message"></smal>
                   </p>
-
-                  <?php if (!empty($errors['email'])) : ?>
-
-                    <small class="text-danger">
-                      <?= esc_html($errors['email']) ?>
-                    </small>
-
-                  <?php endif; ?>
-
-                  <?php if (isset($_GET['newsletter']) && $_GET['newsletter'] === 'success') : ?>
-
-                    <small class="text-success">
-                      با موفقیت عضو خبرنامه شدید.
-                    </small>
-
-                  <?php endif; ?>
-
                 </div>
 
                 <div class="contact_bnt">
@@ -235,7 +218,27 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
     </div>
   </div>
   <!-- END FOOTER BOTTOM AREA  -->
+
 </footer>
+<?php if (isset($_GET['newsletter'])) : ?>
+
+  <?php if ($_GET['newsletter'] === 'success') : ?>
+
+    <div class="toast-notification toast-success js-toast">
+      <button type="button" class="toast-close">&times;</button>
+      <span class="toast-text">با موفقیت در خبرنامه عضو شدید.</span>
+    </div>
+
+  <?php elseif (!empty($errors['email'])) : ?>
+
+    <div class="toast-notification toast-error js-toast">
+      <button type="button" class="toast-close">&times;</button>
+      <span class="toast-text"><?= esc_html($errors['email']) ?></span>
+    </div>
+
+  <?php endif; ?>
+
+<?php endif; ?>
 <?php wp_footer(); ?>
 </body>
 

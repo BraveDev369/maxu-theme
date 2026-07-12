@@ -112,7 +112,12 @@ class RegisterHandler
     wp_set_current_user($user_id);
     wp_set_auth_cookie($user_id);
 
-    wp_safe_redirect(home_url());
+    wp_safe_redirect(add_query_arg(
+      'register',
+      'success',
+      home_url('/register/')
+    ));
+
 
     exit;
   }
