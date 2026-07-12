@@ -118,9 +118,9 @@ $portfolio_query = new WP_Query([
 
                   <h3>
 
-                    <a href="<?php the_permalink(); ?>">
+                    <a href="<?php esc_url(the_permalink()); ?>">
 
-                      <?php the_title(); ?>
+                      <?php esc_html(the_title()); ?>
 
                     </a>
 

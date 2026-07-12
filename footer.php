@@ -2,8 +2,10 @@
 if (! defined("ABSPATH")) exit;
 
 $phone_numbers    = get_field('phone_numbers', 'option');
+$emails_address    = get_field('emails_address', 'option');
 
 $footer_second_col_title    = get_field('footer_second_col_title', 'option');
+
 $second_col_images    = get_field('second_col_images', 'option');
 
 $footer_menu    = get_field('footer_menu', 'option');
@@ -48,7 +50,7 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
                   <a href="#"><i class="fa fa-map-marker fa-fw"></i></a>
                 </div>
                 <div class="footer-sociala-info">
-                  <p><?php the_field('address', 'option'); ?></p>
+                  <p><?php esc_html(the_field('address', 'option')); ?></p>
                 </div>
               </div>
               <?php if ($phone_numbers) : ?>
@@ -58,7 +60,7 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
                   </div>
                   <div class="footer-sociala-info">
                     <?php foreach ($phone_numbers as $phone_number) : ?>
-                      <a style="color: #fff;" href="tel:<?= esc_html($phone_number['phone_number']) ?>"><span class="ltr_text"><?= esc_html($phone_number['phone_number']) ?></span></a>
+                      <a style="color: #fff;" href="tel:<?= esc_attr($phone_number['phone_number']) ?>"><span class="ltr_text"><?= esc_html($phone_number['phone_number']) ?></span></a>
                       <br>
                     <?php endforeach; ?>
                   </div>
@@ -69,7 +71,10 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
                   <a href="#"><i class="fa fa-envelope fa-fw"></i></a>
                 </div>
                 <div class="footer-sociala-info">
-                  <p>info@sample.com</p>
+                  <?php foreach ($emails_address as $email_address) : ?>
+                    <a style="color: #fff;" href="mailto:<?= esc_attr($email_address['email']) ?>"><span class="ltr_text"><?= esc_html($email_address['email']) ?></span></a>
+                    <br>
+                  <?php endforeach; ?>
                 </div>
               </div>
             </div>
@@ -88,7 +93,7 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
                 <?php foreach ($second_col_images as $image) : ?>
                   <div class="footer_thumb">
                     <?php if ($image['image']) : ?>
-                      <a href="#"><img src="<?= esc_url($image['image']['url']) ?>" alt="<?= esc_attr($image['image']['alt']) ?>"></a>
+                      <a href="<?= esc_url($image['image']['url']) ?>"><img src="<?= esc_url($image['image']['url']) ?>" alt="<?= esc_attr($image['image']['alt']) ?>"></a>
                     <?php endif; ?>
                   </div>
                 <?php endforeach; ?>
@@ -106,7 +111,7 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
               <div class="menu-quick-link-container">
                 <ul class="menu">
                   <?php foreach ($footer_menu as $menu) : ?>
-                    <li><a href="<?= get_permalink($menu->ID); ?>"><?= esc_html($menu->post_title); ?></a></li>
+                    <li><a href="<?= esc_url(get_permalink($menu->ID)); ?>"><?= esc_html($menu->post_title); ?></a></li>
                   <?php endforeach; ?>
                 </ul>
               </div>
@@ -119,7 +124,7 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
                       <li>
                         <a class="facebook social-icon"
                           href="<?= esc_url($sm['social_link']); ?>"
-                          title="<?= esc_html($sm['social_name']) ?>"
+                          title="<?= esc_attr($sm['social_name']) ?>"
                           target="_blank"
                           rel="noopener noreferrer">
                           <?= esc_html($sm['social_name']) ?>
@@ -220,7 +225,7 @@ if (isset($_GET['newsletter']) && $_GET['newsletter'] !== 'success') {
             <ul>
               <?php if (!empty($footer_button_area_menu)) : ?>
                 <?php foreach ($footer_button_area_menu as $item) : ?>
-                  <li><a href="<?= get_permalink($item->ID); ?>"><?= esc_html($item->post_title); ?></a></li>
+                  <li><a href="<?= esc_url(get_permalink($item->ID)); ?>"><?= esc_html($item->post_title); ?></a></li>
               <?php endforeach;
               endif; ?>
             </ul>

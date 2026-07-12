@@ -23,7 +23,7 @@ get_template_part('components/page-title');
                     <!-- thumb -->
                     <div class="single_blog_thumb">
 
-                      <a href="<?php the_permalink(); ?>">
+                      <a href="<?php esc_url(the_permalink()); ?>">
 
                         <?php
                         if (has_post_thumbnail()) {
@@ -47,13 +47,13 @@ get_template_part('components/page-title');
                       </a>
                       <a href="<?= esc_url(get_day_link(get_the_time('Y'), get_the_time('m'), get_the_time('d'))); ?>">
                         <i class="fa fa-clock-o"></i>
-                        <span><?= jdate('l j F Y', get_post_timestamp()); ?></span>
+                        <span><?= esc_html(jdate('l j F Y', get_post_timestamp())); ?></span>
                       </a>
 
-                      <a href="<?php comments_link(); ?>">
+                      <a href="<?php esc_url(comments_link()); ?>">
                         <i class="fa fa-comment-o"></i>
 
-                        <?php echo get_comments_number(); ?>
+                        <?= esc_html(get_comments_number()); ?>
                       </a>
 
                     </div>
@@ -63,12 +63,12 @@ get_template_part('components/page-title');
                   <!-- title -->
                   <div class="single_blog_title">
 
-                    <a href="<?php the_permalink(); ?>">
-                      <h2><?php the_title(); ?></h2>
+                    <a href="<?= esc_url(the_permalink()); ?>">
+                      <h2><?= esc_html(get_the_title()); ?></h2>
                     </a>
 
                     <p>
-                      <?php echo wp_trim_words(get_the_excerpt(), 18); ?>
+                      <?= esc_html(wp_trim_words(get_the_excerpt(), 18)); ?>
                     </p>
 
                   </div>
@@ -76,7 +76,7 @@ get_template_part('components/page-title');
                   <!-- button -->
                   <div class="single_blog_bnt">
 
-                    <a href="<?php the_permalink(); ?>">
+                    <a href="<?= esc_url(the_permalink()); ?>">
                       بیشتر بخوانید
                       <i class="fa fa-angle-left"></i>
                     </a>

@@ -70,3 +70,35 @@
     text-align: left;
   }
 }
+
+
+
+/* not found image */
+.not-found-image {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 30px auto;
+  object-fit: contain;
+}
+
+@media (max-width: 992px) {
+  .not-found-image {
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .not-found-image {
+    max-width: 400px;
+    margin: 25px auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .not-found-image {
+    max-width: 300px;
+    margin: 20px auto;
+  }
+}

@@ -137,10 +137,10 @@ $post_type = get_post_type()
                       <img src="<?= esc_url(get_the_post_thumbnail_url()) ?>" alt="<?= img_alt(get_the_id()) ?>">
                     </div>
                     <div class="recent_post_content">
-                      <h4><?= the_title(); ?></h4>
+                      <h4><?= esc_html(the_title()); ?></h4>
                     </div>
                     <div class="post_meta">
-                      <span><?= jdate('j F Y', get_the_time('U')); ?></span>
+                      <span><?= esc_html(jdate('j F Y', get_the_time('U'))); ?></span>
                     </div>
                   </div>
                 </div>

@@ -15,10 +15,10 @@ $emails_address    = get_field('emails_address', 'option');
         <div class="top-address">
           <p>
             <?php if ($phone_numbers): ?>
-              <a href="tel:<?= esc_html($phone_numbers[0]['phone_number']) ?>"><i class="fa fa-phone"></i><span class="ltr_text"><?= esc_html($phone_numbers[0]['phone_number']) ?></span></a>
+              <a href="tel:<?= esc_attr($phone_numbers[0]['phone_number']) ?>"><i class="fa fa-phone"></i><span class="ltr_text"><?= esc_html($phone_numbers[0]['phone_number']) ?></span></a>
             <?php endif; ?>
             <?php if ($emails_address): ?>
-              <a href="mailto:<?= esc_html($emails_address[0]['email']) ?>"><i class="fa fa-envelope-o"></i><?= esc_html($emails_address[0]['email']) ?></a>
+              <a href="mailto:<?= esc_attr($emails_address[0]['email']) ?>"><i class="fa fa-envelope-o"></i><?= esc_html($emails_address[0]['email']) ?></a>
             <?php endif; ?>
 
           </p>

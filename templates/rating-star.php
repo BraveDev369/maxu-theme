@@ -16,12 +16,12 @@ if (! defined("ABSPATH")) exit;
 
       <input
         type="radio"
-        id="star<?= $i; ?>"
+        id="star<?= esc_attr($i); ?>"
         name="rating"
-        value="<?= $i; ?>"
+        value="<?= esc_attr($i); ?>"
         required>
 
-      <label for="star<?= $i; ?>">
+      <label for="star<?= esc_attr($i); ?>">
         <i class="fa fa-star"></i>
       </label>
 

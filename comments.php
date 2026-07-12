@@ -34,7 +34,7 @@ if ($comments) {
 					<div class="single_comment_title_text_bg"></div>
 					<div class="single_comment_title">
 						<h3><?= esc_html($comment->comment_author) ?></h3>
-						<p><?= jdate('l j F Y', strtotime($comment->comment_date_gmt)); ?></p>
+						<p><?= esc_html(jdate('l j F Y', strtotime($comment->comment_date_gmt))); ?></p>
 						<p><?= $rating ? str_repeat('<i class="rating-star-show fa fa-star"></i>', $rating) : '-'; ?></p>
 					</div>
 					<div class="single_comment_text">
@@ -69,7 +69,7 @@ if ($comments) {
 							<div class="single_comment_title_text_bg"></div>
 							<div class="single_comment_title">
 								<h3><?= esc_html($reply->comment_author) ?></h3>
-								<p><?= jdate('l j F Y', strtotime($reply->comment_date_gmt)); ?></p>
+								<p><?= esc_html(jdate('l j F Y', strtotime($reply->comment_date_gmt))); ?></p>
 								<p><?= $rating ? str_repeat('<i class="rating-star-show fa fa-star"></i>', $rating) : '-'; ?></p>
 							</div>
 							<div class="single_comment_text">

@@ -53,7 +53,7 @@ $blog_query = new WP_Query([
 
                   <div class="single_blog_thumb">
 
-                    <a href="<?php the_permalink(); ?>">
+                    <a href="<?php esc_url(the_permalink()); ?>">
 
                       <?php if (has_post_thumbnail()) : ?>
 
@@ -71,17 +71,17 @@ $blog_query = new WP_Query([
 
                     <a href="#">
                       <i class="fa fa-user"></i>
-                      <?php the_author(); ?>
+                      <?php esc_html(the_author()); ?>
                     </a>
 
                     <a href="#">
                       <i class="fa fa-clock-o"></i>
-                      <?php echo get_the_date(); ?>
+                      <?= esc_html(get_the_date()); ?>
                     </a>
 
-                    <a href="<?php comments_link(); ?>">
+                    <a href="<?= esc_url(comments_link()); ?>">
                       <i class="fa fa-comment-o"></i>
-                      <?php echo get_comments_number(); ?>
+                      <?= esc_html(get_comments_number()); ?>
                     </a>
 
                   </div>
@@ -90,15 +90,15 @@ $blog_query = new WP_Query([
 
                 <div class="single_blog_title">
 
-                  <a href="<?php the_permalink(); ?>">
+                  <a href="<?= esc_url(the_permalink()); ?>">
 
-                    <h2><?php the_title(); ?></h2>
+                    <h2><?= esc_html(the_title()); ?></h2>
 
                   </a>
 
                   <p>
 
-                    <?= wp_trim_words(get_the_excerpt(), 18); ?>
+                    <?= esc_html(wp_trim_words(get_the_excerpt(), 18)); ?>
 
                   </p>
 
@@ -106,7 +106,7 @@ $blog_query = new WP_Query([
 
                 <div class="single_blog_bnt">
 
-                  <a href="<?php the_permalink(); ?>">
+                  <a href="<?=  esc_url(the_permalink()); ?>">
 
                     بیشتر بخوانید
 

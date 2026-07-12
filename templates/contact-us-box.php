@@ -33,7 +33,7 @@ $address_link  = get_field('address_link', 'option');
           <p>
             <?php foreach ($emails_address as $email_address) : ?>
 
-              <a href="mailto:<?= esc_html($email_address['email']) ?>"><?= esc_html($email_address['email']) ?></a>
+              <a href="mailto:<?= esc_attr($email_address['email']) ?>"><?= esc_html($email_address['email']) ?></a>
               <br>
             <?php endforeach; ?>
           </p>

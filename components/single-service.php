@@ -15,9 +15,11 @@ $service = get_fields();
           <div class="single_blog_inner">
             <!-- thumb -->
             <div class="">
-              <img
-                src="<?= esc_url($service['service_image']['url']); ?>"
-                alt="<?= esc_attr($service['service_image']['alt']); ?>">
+              <?php if (!empty($service['service_image'])) : ?>
+                <img
+                  src="<?= esc_url($service['service_image']['url']); ?>"
+                  alt="<?= esc_attr($service['service_image']['alt']); ?>">
+              <?php endif; ?>
             </div>
             <!-- meta -->
           </div>

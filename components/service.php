@@ -50,7 +50,7 @@ $services = new WP_Query([
 
                 <div class="single_service_content">
 
-                  <h2><?php the_title(); ?></h2>
+                  <h2><?= esc_html(get_the_title()); ?></h2>
 
                   <?php
                   $excerpt = get_the_excerpt();
@@ -66,7 +66,7 @@ $services = new WP_Query([
 
                 <div class="service_btn">
 
-                  <a href="<?php the_permalink(); ?>">
+                  <a href="<?= esc_url(get_permalink()); ?>">
                     مشاهده بیشتر
                   </a>
 

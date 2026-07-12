@@ -20,12 +20,12 @@ get_template_part('components/page-title');
                 </div>
                 <!-- meta -->
                 <div class="single_blog_post_meta">
-                  <a href="<?php echo esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
+                  <a href="<?= esc_url(get_author_posts_url(get_the_author_meta('ID'))); ?>">
                     <i class="fa fa-user"></i>
-                    <?php echo esc_html(get_the_author()); ?>
+                    <?= esc_html(get_the_author()); ?>
                   </a>
-                  <a href="#"><i class="fa fa-clock-o"></i><span><?= jdate('l j F Y', get_the_time('U')); ?></span></a>
-                  <a href="<?php comments_link(); ?>"><i class="fa fa-comment-o"></i><?php echo get_comments_number(); ?></a>
+                  <a href="#"><i class="fa fa-clock-o"></i><span><?= esc_html(jdate('l j F Y', get_the_time('U'))); ?></span></a>
+                  <a href="<?= esc_url(comments_link()); ?>"><i class="fa fa-comment-o"></i><?= esc_html(get_comments_number()); ?></a>
                 </div>
               </div>
               <!-- title -->
@@ -34,12 +34,12 @@ get_template_part('components/page-title');
               </div>
               <!-- content -->
               <div class="single_blog_content">
-                <h2><?= get_the_excerpt(); ?></h2>
+                <h2><?= esc_html(get_the_excerpt()); ?></h2>
                 <p style="text-align: justify;">
 
                   <?php
                   if (get_the_content()) {
-                    echo get_the_content();
+                    echo esc_html(get_the_content());
                   }
                   ?>
                 </p>

@@ -8,7 +8,7 @@
  <head>
    <meta charset="UTF-8">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
-   <title><?= get_bloginfo('name'); ?></title>
+   <title><?= esc_html(get_bloginfo('name')); ?></title>
    <meta name="description" content="">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <link rel="icon" type="image/png" href="<?= esc_url(get_site_icon_url(32)); ?>">

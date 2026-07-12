@@ -26,12 +26,12 @@ get_template_part('components/page-title');
               </div>
               <!-- content -->
               <div class="single_blog_content">
-                <h2><?= get_the_excerpt(); ?></h2>
+                <h2><?= esc_html(get_the_excerpt()); ?></h2>
                 <p style="text-align: justify;">
 
                   <?php
                   if (get_the_content()) {
-                    echo get_the_content();
+                    echo esc_html(get_the_content());
                   }
                   ?>
                 </p>
