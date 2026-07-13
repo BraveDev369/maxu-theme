@@ -54,14 +54,15 @@ $address_link  = get_field('address_link', 'option');
       </div>
     <?php endif; ?>
     <?php if ($address_link): ?>
-
-      <iframe
-        src="<?= esc_url($address_link) ?>"
-        width="100%"
-        height="130px"
-        style="border:0;"
-        loading="lazy">
-      </iframe>
+      <div class="hidden-md hidden-lg">
+        <iframe
+          src="<?= esc_url($address_link) ?>"
+          width="100%"
+          height="400"
+          style="border:0;"
+          loading="lazy">
+        </iframe>
+      </div>
     <?php endif; ?>
 
   </div>

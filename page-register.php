@@ -22,9 +22,9 @@ if (isset($_GET['register']) && $_GET['register'] !== 'success') {
 }
 ?>
 
-<div class="container" style="margin-top: 50px; margin-bottom:50px">
+<div class="container">
 
-  <div class="row">
+  <div class="row sdsdsd">
 
     <div class="col-md-6 col-md-offset-3">
 
@@ -55,68 +55,70 @@ if (isset($_GET['register']) && $_GET['register'] !== 'success') {
               name="action"
               value="maxu_register">
 
-            <div class="form_field_inner">
-              <input
-                type="text"
-                name="username"
-                placeholder="نام کاربری"
-                class="form-control js-register-username"
-                value="<?= esc_attr($old['username'] ?? ''); ?>">
+            <div class="form-field">
+              <div class="form_field_inner">
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="نام کاربری"
+                  class="form-control js-register-username"
+                  value="<?= esc_attr($old['username'] ?? ''); ?>">
 
-              <?php if (!empty($errors['username'])) : ?>
-                <small class="text-red">
-                  <?= esc_html($errors['username']); ?>
-                </small>
-              <?php endif; ?>
+                <?php if (!empty($errors['username'])) : ?>
+                  <small class="text-red">
+                    <?= esc_html($errors['username']); ?>
+                  </small>
+                <?php endif; ?>
 
-            </div>
+              </div>
 
-            <div class="form_field_inner">
+              <div class="form_field_inner">
 
-              <input
-                type="email"
-                name="email"
-                placeholder="ایمیل"
-                class="form-control js-register-email"
-                value="<?= esc_attr($old['email'] ?? ''); ?>">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="ایمیل"
+                  class="form-control js-register-email"
+                  value="<?= esc_attr($old['email'] ?? ''); ?>">
 
-              <?php if (!empty($errors['email'])) : ?>
-                <small class="text-red">
-                  <?= esc_html($errors['email']); ?>
-                </small>
-              <?php endif; ?>
+                <?php if (!empty($errors['email'])) : ?>
+                  <small class="text-red">
+                    <?= esc_html($errors['email']); ?>
+                  </small>
+                <?php endif; ?>
 
-            </div>
+              </div>
 
-            <div class="form_field_inner">
-              <input
-                type="password"
-                name="password"
-                placeholder="رمز عبور"
-                class="form-control js-register-password">
+              <div class="form_field_inner">
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="رمز عبور"
+                  class="form-control js-register-password">
 
-              <?php if (!empty($errors['password'])) : ?>
-                <small class="text-red">
-                  <?= esc_html($errors['password']); ?>
-                </small>
-              <?php endif; ?>
+                <?php if (!empty($errors['password'])) : ?>
+                  <small class="text-red">
+                    <?= esc_html($errors['password']); ?>
+                  </small>
+                <?php endif; ?>
 
-            </div>
+              </div>
 
-            <div class="form_field_inner">
+              <div class="form_field_inner">
 
-              <input
-                type="password"
-                name="confirm_password"
-                placeholder="تکرار رمز عبور"
-                class="form-control js-register-confirm-password">
+                <input
+                  type="password"
+                  name="confirm_password"
+                  placeholder="تکرار رمز عبور"
+                  class="form-control js-register-confirm-password">
 
-              <?php if (!empty($errors['confirm_password'])) : ?>
-                <small class="text-red">
-                  <?= esc_html($errors['confirm_password']); ?>
-                </small>
-              <?php endif; ?>
+                <?php if (!empty($errors['confirm_password'])) : ?>
+                  <small class="text-red">
+                    <?= esc_html($errors['confirm_password']); ?>
+                  </small>
+                <?php endif; ?>
 
+              </div>
             </div>
 
             <button
