@@ -25,7 +25,6 @@ function maxu_enqueue_assets()
   wp_enqueue_style('maxu-responsive', $uri . '/assets/css/responsive.css', [], filemtime(get_template_directory() . '/assets/css/responsive.css'));
   wp_enqueue_style('widget-style', $uri . '/assets/css/widget.css', [], filemtime(get_template_directory() . '/assets/css/widget.css'));
   wp_enqueue_style('rating-star', $uri . '/assets/css/rating-star.css', [], filemtime(get_template_directory() . '/assets/css/rating-star.css'));
-  wp_enqueue_style('header-css', $uri . '/inc/css/header-css.css', [], filemtime(get_template_directory() . '/inc/css/header-css.css'));
 
   // JS
   wp_enqueue_script(
@@ -72,21 +71,6 @@ function maxu_enqueue_assets()
 }
 
 add_action('wp_enqueue_scripts', 'maxu_enqueue_assets');
-
-//////////////////////////////////////////////////
-// User Script
-//////////////////////////////////////////////////
-
-add_action('wp_enqueue_scripts', function () {
-
-  wp_enqueue_script(
-    'maxu-user',
-    get_template_directory_uri() . '/inc/js/user.js',
-    ['jquery'],
-    filemtime(get_template_directory() . '/inc/js/user.js'),
-    true
-  );
-});
 
 //////////////////////////////////////////////////
 // Form Layout Script
@@ -146,24 +130,6 @@ add_action('wp_enqueue_scripts', function () {
       get_template_directory_uri() . '/inc/js/register.js',
       ['jquery'],
       filemtime(get_template_directory() . '/inc/js/register.js'),
-      true
-    );
-  }
-});
-
-//////////////////////////////////////////////////
-// Login Page Script
-//////////////////////////////////////////////////
-
-add_action('wp_enqueue_scripts', function () {
-
-  if (is_page('login')) {
-
-    wp_enqueue_script(
-      'maxu-login',
-      get_template_directory_uri() . '/inc/js/login.js',
-      ['jquery'],
-      filemtime(get_template_directory() . '/inc/js/login.js'),
       true
     );
   }

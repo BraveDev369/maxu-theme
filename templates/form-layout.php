@@ -41,7 +41,6 @@ if (isset($_GET['contact'])) {
         <div class="form_field_inner">
           <input
             class="js-email"
-
             type="text"
             name="email"
             value="<?= esc_attr($old['email'] ?? '') ?>"

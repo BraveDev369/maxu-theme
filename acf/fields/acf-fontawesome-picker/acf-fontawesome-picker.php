@@ -1,9 +1,4 @@
 <?php
-/*
-Plugin Name: ACF FontAwesome Picker
-Description: FontAwesome Picker for ACF
-Version: 1.0
-*/
 
 if (!defined('ABSPATH')) {
   exit;
